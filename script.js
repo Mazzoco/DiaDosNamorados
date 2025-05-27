@@ -40,11 +40,9 @@ function loadQuestion() {
     quizDiv.innerHTML = "";
     const q = questions[currentQuestion];
 
-    const img = document.createElement("img");
-    img.src = q.image;
-    img.alt = "Imagem da pergunta";
-    img.classList.add("question-image");
-    quizDiv.appendChild(img);
+    const perguntaImg = document.getElementById("pergunta-img");
+perguntaImg.src = q.image;
+
 
     const questionTitle = document.createElement("h2");
     questionTitle.textContent = q.question;
