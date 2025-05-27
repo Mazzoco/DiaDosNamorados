@@ -6,26 +6,26 @@ const questions = [
         question: "Qual é a nossa data de aniversário de namoro?",
         options: ["1 de Outubro", "14 de Setembro", "8 de Setembro", "22 de Setembro"],
         answer: "22 de Setembro",
-        image: "fotos/imagem1.png"
+        image: "imagem1.png"
 
     },
     {
         question: "Qual minha cor favorita?",
         options: ["Azul", "Vermelho", "Roxo", "Amarelo"],
         answer: "Azul",
-        image: "fotos/imagem2.png"
+        image: "imagem2.png"
     },
     {
         question: "Qual foi meu primeiro presente para você?",
         options: ["Alexa", "Pijama", "Vestido", "Pelúcia do Stitch"],
         answer: "Pelúcia do Stitch",
-        image: "fotos/imagem3.png"
+        image: "imagem3.png"
     },
     {
         question: "Qual foi o primeiro filme que terminamos juntos?",
         options: ["Enrolados", "Jogos Vorazes", "10 coisas que eu odeio em você", "Van Helsing"],
         answer: "10 coisas que eu odeio em você",
-        image: "fotos/imagem4.png"
+        image: "imagem4.png"
     }
 ];
 
