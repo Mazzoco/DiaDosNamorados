@@ -1,0 +1,76 @@
+/* Mobile-first approach */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed from center for mobile */
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+
+.quiz-container {
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Will shrink on smaller devices */
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: clamp(1.2rem, 4vw, 1.5rem); /* Responsive font size */
+    margin-bottom: 15px;
+    color: #ff4b69;
+}
+
+button {
+    background-color: #ff4b69;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    width: 100%; /* Full width on mobile */
+    max-width: 200px; /* But not too wide */
+}
+
+.option {
+    background-color: #ffe4e1;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.question-image {
+    width: 100%;
+    max-width: 100%; /* More flexible than fixed 300px */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Tablet and larger */
+@media (min-width: 768px) {
+    body {
+        align-items: center; /* Center vertically on larger screens */
+    }
+    
+    .quiz-container {
+        padding: 30px;
+    }
+    
+    button {
+        width: auto; /* Auto width on larger screens */
+    }
+}
